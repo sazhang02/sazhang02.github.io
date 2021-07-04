@@ -17,17 +17,115 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="index.html" id="onlink">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#home" id="onlink">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
 
       </nav>
     </div>
 
   </header>
-  <div class="description">
-    Welcome! Click on the tabs above to explore my website
+  <!-- HOME/INFO SECTION -->
+  <span id="home"></span>
+  <div class="banner">
+    <div class="banner_contents">
+      <h1>Samantha Zhang</h1>
+      <p>Descriptions</p>
+      <a href="./files/Samantha_Zhang_Resume.docx" download="Samantha_Zhang" target="_blank" rel="noopener noreferrer">
+        <button>Download Resume</button>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ABOUT ME SECTION -->
+  <h2><span id="about"></span>ABOUT ME</h2>
+  <div class="social_media">
+    <ul>
+      <a href="https://github.com/sazhang02" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/github.png">
+      </a>
+      <a href="https://linkedin.com/in/samantha-zhang" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/linkedin.png">
+      </a>
+      <a href="mailto: sjz46@cornell.edu">
+        <img src="./assets/gmail.png">
+      </a>
+    </ul>
+  </div>
+
+  <p>Hello! My name is Sammie :)</p>
+  <!-- PROJECTS SECTION -->
+  <h2><span id="projects"></span>PROJECTS</h2>
+  <p>Here are some of my projects</p>
+  <!-- SOFTWARE PROJECTS SECTION -->
+  <h3>SOFTWARE PROJECTS</h3>
+  <div id="paginated_gallery" class="gallery">
+    <div class="gallery_scroller">
+      <div class="project">
+        <div class="project_img"><img src="./assets/hackchallenge.png"></div>
+        <div class="project_title">Challenge With Friends</div>
+        <div class="project_description">
+          <ul>
+            <li>Won best overall app in Hack Challenge, semesterly hackathon for students enrolled in Cornell AppDev
+              courses,
+              against 70+ Cornell students</li>
+            <li>Designed app UI on Figma and built iOS side using Swift</li>
+            <li>Implemented entire iOS frontend featuring tab based navigation system, user login portal, data
+              filtering, and
+              encoding and decoding images</li>
+            <li>Integration with backend team members’ custom API deployed on Heroku using Alamofire & CocoaPods</li>
+          </ul>
+
+        </div>
+
+
+
+      </div>
+      <div class="project">
+        <div class="project_title">Project Name</div>
+        <div class="project_description">Project
+          Description
+        </div>
+      </div>
+      <div class="project">
+        <div class="project_title">Project Name</div>
+        <div class="project_description">Project
+          Description
+        </div>
+      </div>
+
+    </div>
+    <span class="btn prev"></span>
+    <span class="btn next"></span>
+  </div>
+  <!-- DESIGN PROJECTS SECTION -->
+  <h3>DESIGN PROJECTS</h3>
+  <div id="paginated_gallery" class="gallery">
+    <div class="gallery_scroller">
+      <div class="project">
+        <div class="project_title">Project Name</div>
+        <div class="project_description">Project
+          Description
+        </div>
+      </div>
+      <div class="project">
+        <div class="project_title">Project Name</div>
+        <div class="project_description">Project
+          Description
+        </div>
+      </div>
+      <div class="project">
+        <div class="project_title">Project Name</div>
+        <div class="project_description">Project
+          Description
+        </div>
+      </div>
+
+    </div>
+    <span class="btn prev"></span>
+    <span class="btn next"></span>
   </div>
 </body>
 
