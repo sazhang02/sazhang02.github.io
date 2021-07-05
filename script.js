@@ -1,13 +1,26 @@
-const gallery = document.querySelector('#paginated_gallery');
-const gallery_scroller = gallery.querySelector('.gallery_scroller');
-const gallery_item_size = gallery_scroller.querySelector('div').clientWidth;
 
-gallery.querySelector('.btn.next').addEventListener('click', scrollToNextPage);
-gallery.querySelector('.btn.prev').addEventListener('click', scrollToPrevPage);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function scrollToNextPage() {
-  gallery_scroller.scrollBy(gallery_item_size, 0);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-function scrollToPrevPage() {
-  gallery_scroller.scrollBy(-gallery_item_size, 0);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("projects");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }

@@ -61,72 +61,60 @@
   <p>Here are some of my projects</p>
   <!-- SOFTWARE PROJECTS SECTION -->
   <h3>SOFTWARE PROJECTS</h3>
-  <div id="paginated_gallery" class="gallery">
-    <div class="gallery_scroller">
-      <div class="project">
-        <div class="project_img"><img src="./assets/hackchallenge.png"></div>
-        <div class="project_title">Challenge With Friends</div>
-        <div class="project_description">
-          <ul>
-            <li>Won best overall app in Hack Challenge, semesterly hackathon for students enrolled in Cornell AppDev
-              courses,
-              against 70+ Cornell students</li>
-            <li>Designed app UI on Figma and built iOS side using Swift</li>
-            <li>Implemented entire iOS frontend featuring tab based navigation system, user login portal, data
-              filtering, and
-              encoding and decoding images</li>
-            <li>Integration with backend team members’ custom API deployed on Heroku using Alamofire & CocoaPods</li>
-          </ul>
+  <!-- Slideshow container -->
+  <div class="project-container">
 
-        </div>
-
-
-
+    <!-- Full-width images with number and caption text -->
+    <div class="projects fade">
+      <div class="page_number">1 / 3</div>
+      <img src="./assets/hackchallenge_banner.png" style="width:100%">
+      <div class="project_title">Challenge With Friends</div>
+      <div class="project_caption">
+        <a href="https://github.com/sazhang02/AppDevHackChallenge" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" style="height:100%">
+        </a>
+        Test
       </div>
-      <div class="project">
-        <div class="project_title">Project Name</div>
-        <div class="project_description">Project
-          Description
-        </div>
+      <div class="project_description">
+        <ul>
+          <li>Won best overall app in Hack Challenge, semesterly hackathon for students enrolled in Cornell AppDev
+            courses,
+            against 70+ Cornell students</li>
+          <li>Designed app UI on Figma and built iOS side using Swift</li>
+          <li>Implemented entire iOS frontend featuring tab based navigation system, user login portal, data
+            filtering, and
+            encoding and decoding images</li>
+          <li>Integration with backend team members’ custom API deployed on Heroku using Alamofire & CocoaPods</li>
+        </ul>
       </div>
-      <div class="project">
-        <div class="project_title">Project Name</div>
-        <div class="project_description">Project
-          Description
-        </div>
-      </div>
-
+      <div class="project_context">Spring 2021, Introduction to iOS Development</div>
     </div>
-    <span class="btn prev"></span>
-    <span class="btn next"></span>
-  </div>
-  <!-- DESIGN PROJECTS SECTION -->
-  <h3>DESIGN PROJECTS</h3>
-  <div id="paginated_gallery" class="gallery">
-    <div class="gallery_scroller">
-      <div class="project">
-        <div class="project_title">Project Name</div>
-        <div class="project_description">Project
-          Description
-        </div>
-      </div>
-      <div class="project">
-        <div class="project_title">Project Name</div>
-        <div class="project_description">Project
-          Description
-        </div>
-      </div>
-      <div class="project">
-        <div class="project_title">Project Name</div>
-        <div class="project_description">Project
-          Description
-        </div>
-      </div>
 
+    <div class="projects fade">
+      <div class="page_number">2 / 3</div>
+      <img src="./assets/hackchallenge_banner.png" style="width:100%">
+      <div class="project_title">Caption Two</div>
+      <div class="project_description">Caption Three</div>
     </div>
-    <span class="btn prev"></span>
-    <span class="btn next"></span>
+
+    <div class="projects fade">
+      <div class="page_number">3 / 3</div>
+      <img src="./assets/hackchallenge_banner.png" style="width:100%">
+      <div class="project_title">Caption Three</div>
+      <div class="project_description">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
+
+  <div class="page_indicator">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
 </body>
 
 </html>
