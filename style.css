@@ -144,7 +144,7 @@ a, a:visited {
 }
 .social_media {
   width: 25%;
-  left: 36%;
+  left: 37%;
   position: relative;
 }
 /*PROJECTS*/
@@ -281,6 +281,7 @@ a, a:visited {
 .page_indicator {
   text-align:center;
   top: 0;
+  padding-bottom: 2%;
 }
 
 .dot {

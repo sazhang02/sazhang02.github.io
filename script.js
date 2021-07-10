@@ -1,4 +1,3 @@
-
 var slide_index = 1;
 var demo1_active = false;
 var demo2_active = false;
@@ -79,7 +78,6 @@ function display_figma(n) {
     }
     demo2_active = !demo2_active;
   }
-
 }
 function display_video(n) {
   var video = document.getElementsByClassName("video");
