@@ -5,7 +5,6 @@
   font-weight:lighter;
 }
 
-
 h2 {
   position:relative;
   color: white;
@@ -249,7 +248,7 @@ a, a:visited {
   line-height: 3.5vw;
 }
   
-.demo button, .clip button{
+.demo button, .clip button, .reload button{
   top:3px;
   right:3px;
   position: absolute;
@@ -269,6 +268,8 @@ a, a:visited {
   border-color: rgb(0, 132, 255);
   color:rgb(0, 132, 255);
 }
+
+iframe { height: 100vh }
 
 .page_number {
   color: rgb(128, 128, 128);

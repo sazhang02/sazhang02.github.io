@@ -91,3 +91,11 @@ function display_video(n) {
   }
   video_active = !video_active;
 }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+function reload_website() {
+  location.reload();
+}
